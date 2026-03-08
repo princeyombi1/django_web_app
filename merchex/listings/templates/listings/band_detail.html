@@ -20,4 +20,7 @@
 <li><a href="{% url 'listing-detail' listing.id %}">{{ listing.title }}</a></li>
 {% endfor %}
 
+<a href="{% url 'band-update' band.id %}">Mettre à jour le groupe</a>
+<a href="{% url 'band-delete' band.id %}">Supprimer le groupe</a>
+
 {% endblock %}
